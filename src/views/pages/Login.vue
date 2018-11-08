@@ -11,15 +11,16 @@
                   <p class="text-muted">Sign In to your account</p>
                   <b-input-group class="mb-3">
                     <b-input-group-prepend><b-input-group-text><i class="icon-user"></i></b-input-group-text></b-input-group-prepend>
-                    <b-form-input type="text" class="form-control" placeholder="Username" autocomplete="username email" />
+                    <b-form-input type="text" class="form-control" placeholder="Username" autocomplete="username email" v-model="mail" />
                   </b-input-group>
                   <b-input-group class="mb-4">
                     <b-input-group-prepend><b-input-group-text><i class="icon-lock"></i></b-input-group-text></b-input-group-prepend>
-                    <b-form-input type="password" class="form-control" placeholder="Password" autocomplete="current-password" />
+                    <b-form-input type="password" class="form-control" placeholder="Password" autocomplete="current-password" v-model="pwd"/>
                   </b-input-group>
+                  <h1 v-if="failed" class="alert alert-danger" style="font-size:15px"> Failed to connect !</h1>
                   <b-row>
                     <b-col cols="6">
-                      <b-button variant="primary" class="px-4">Login</b-button>
+                      <b-button v-on:click="connect" zvariant="primary" class="px-4">Login</b-button>
                     </b-col>
                     <b-col cols="6" class="text-right">
                       <b-button variant="link" class="px-0">Forgot password?</b-button>
@@ -32,7 +33,7 @@
               <b-card-body class="text-center">
                 <div>
                   <h2>Sign up</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>No account yet ? start to create my account !</p>
                   <b-button variant="primary" class="active mt-3">Register Now!</b-button>
                 </div>
               </b-card-body>
@@ -49,3 +50,4 @@ export default {
   name: 'Login'
 }
 </script>
+<script  src="./loginControl.js"></script>
