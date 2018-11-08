@@ -7,7 +7,7 @@
         alt="admin@bootstrapmaster.com" />
     </template>\
     <template slot="dropdown">
-      <b-dropdown-header tag="div" class="text-center"><strong>Account</strong></b-dropdown-header>
+      <b-dropdown-header tag="div" class="text-center"><strong>{{userName}}</strong></b-dropdown-header>
       <b-dropdown-item><i class="fa fa-tasks" /> Tasks
         <b-badge variant="danger">{{ itemsCount }}</b-badge>
       </b-dropdown-item>
@@ -16,9 +16,9 @@
         class="text-center">
         <strong>Settings</strong>
       </b-dropdown-header>
-      <b-dropdown-item><i class="fa fa-user" /> Profile</b-dropdown-item>
+      <b-dropdown-item><i class="fa fa-user" v-on:click="goProfile()" /> Profile</b-dropdown-item>
       <b-dropdown-divider />
-      <b-dropdown-item><i class="fa fa-lock" /> Logout</b-dropdown-item>
+      <b-dropdown-item><i class="fa fa-lock" v-on:click="logOut()" /> Logout</b-dropdown-item>
     </template>
   </AppHeaderDropdown>
 </template>
@@ -31,7 +31,7 @@ export default {
     AppHeaderDropdown
   },
   data: () => {
-    return { itemsCount: 42 }
+    return { itemsCount: 42, userName : sessionStorage.getItem("nameUser")}
   }
 }
 </script>

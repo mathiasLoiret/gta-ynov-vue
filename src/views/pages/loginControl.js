@@ -16,7 +16,7 @@ export default {
         console.log(this.mail);
         console.log(this.pwd);
         if(this.checkServerIdentity()){
-            this.$router.replace({path: '/dashboard'})
+            this.$router.replace({path: '/dashboard'});
         }else{
             this.failed = true;
         }
@@ -25,8 +25,12 @@ export default {
     checkServerIdentity(){
         var inUsersData = false;
         usersData.forEach((user)=>{
-            if(user.email == this.mail && user.pwd == this.pwd)
-            inUsersData = true;
+            if(user.email == this.mail && user.pwd == this.pwd){
+                sessionStorage.setItem("idUser", user.id);
+                sessionStorage.setItem("nameUser", user.name);
+                sessionStorage.setItem("roleUser", user.role);
+                inUsersData = true;
+            }
         })
         return inUsersData;
     }

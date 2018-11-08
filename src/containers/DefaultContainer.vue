@@ -2,7 +2,7 @@
   <div class="app">
     <AppHeader fixed>
       <SidebarToggler class="d-lg-none" display="md" mobile />
-      <b-link class="navbar-brand" to="#">
+      <b-link class="navbar-brand" to="dashboard">
         <img class="navbar-brand-full" src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo">
         <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
       </b-link>
@@ -10,10 +10,12 @@
       <b-navbar-nav class="d-md-down-none">
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-item class="d-md-down-none">
-          <i class="icon-bell"></i>
-          <b-badge pill variant="danger">5</b-badge>
-        </b-nav-item>
+        <div class="d-md-down-none">
+          {{roleUser}} -
+        </div>
+        <div class="d-md-down-none">
+          {{nameUser}}
+        </div>
         <DefaultHeaderDropdownAccnt/>
       </b-navbar-nav>
     </AppHeader>
@@ -76,7 +78,9 @@ export default {
   },
   data () {
     return {
-      nav: nav.items
+      nav: nav.items,
+      nameUser : sessionStorage.getItem("nameUser"),
+      roleUser : sessionStorage.getItem("roleUser")
     }
   },
   computed: {
@@ -85,6 +89,11 @@ export default {
     },
     list () {
       return this.$route.matched.filter((route) => route.name || route.meta.label )
+    }
+  },
+  methods: {
+    goDashboard(){
+      this.$router.replace({path: '/dashboard'});
     }
   }
 }
