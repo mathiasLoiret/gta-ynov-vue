@@ -21,6 +21,7 @@ GTA application
 - Avancement de la page User / données personnel de l'utilisateur
 
   Travail effectué :
-- 
+- Le menu différentiel a été mis en place
+- la fontion de déconnexion à été ajoutée
 
 Application disponible sur  https://mathiasloiret.github.io/ (dernière version le 26/10/18 à 11h52)
