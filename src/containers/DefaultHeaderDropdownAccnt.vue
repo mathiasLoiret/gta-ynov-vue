@@ -16,9 +16,9 @@
         class="text-center">
         <strong>Settings</strong>
       </b-dropdown-header>
-      <b-dropdown-item><i class="fa fa-user" v-on:click="goProfile()" /> Profile</b-dropdown-item>
+      <b-dropdown-item><i class="fa fa-user" /> Profile</b-dropdown-item>
       <b-dropdown-divider />
-      <b-dropdown-item><i class="fa fa-lock" v-on:click="logOut()" /> Logout</b-dropdown-item>
+      <b-dropdown-item><i class="fa fa-lock" href="/logout" /> Logout</b-dropdown-item>
     </template>
   </AppHeaderDropdown>
 </template>

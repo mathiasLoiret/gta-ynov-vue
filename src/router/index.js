@@ -356,10 +356,17 @@ const router = new Router({
   ]
 })
 
-router.beforeEach ((to, from, next) => {
-  if(sessionStorage.length <= 0 && from.path != "/")
-    next('pages/login')
+router.beforeEach((to, from, next) => {
+  if (sessionStorage.length == 0 && from.path != "/" && to.path != "/pages/login") {
+    next('/pages/login');
+  }
+  else if(to.path == "/logout")
+  {
+    sessionStorage.clear()
+    next('/pages/login')
+  }
   else{
+    console.log(sessionStorage.length)
     next();
   }
 })
