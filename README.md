@@ -33,4 +33,4 @@ GTA application
   Travail effectué :
 - 
 
-Application disponible sur  https://mathiasloiret.github.io/ (dernière version le 15/11/18 à 11h52)
+Application disponible sur  https://mathiasloiret.github.io/ (dernière version le 15/11/18 à 13h52)
