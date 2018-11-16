@@ -16,7 +16,11 @@ export default {
         console.log(this.mail);
         console.log(this.pwd);
         if(this.checkServerIdentity()){
-            this.$router.replace({path: '/dashboard'});
+            if(sessionStorage.getItem("roleUser") == "Human Resources Director"){
+                this.$router.replace({path: '/logs'});
+            }else{
+                this.$router.replace({path: '/dashboard'});
+            }
         }else{
             this.failed = true;
         }

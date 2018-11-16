@@ -59,6 +59,11 @@ const User = () => import('@/views/users/User')
 
 //custom
 const Planning = () => import('@/views/planning/Planning')
+const Logs = () => import('@/views/Logs/Logs')
+const Parameters = () => import('@/views/Parameters/Parameters')
+//custom components
+const LogsDetails = () => import('@/views/base/LogsDetails')
+const ParametersDetails = () => import('@/views/base/ParametersDetails')
 
 Vue.use(Router)
 
@@ -145,7 +150,33 @@ const router = new Router({
             component: Planning,
           },
         ]
-      },
+        },
+        {
+          path: 'Parameters',
+          meta: { label: 'Parameters'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '',
+              component: ParametersDetails,
+            },
+          ]
+        },
+        {
+          path: 'Logs',
+          meta: { label: 'Logs'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '',
+              component: LogsDetails,
+            },
+          ]
+          },
         {
           path: 'base',
           redirect: '/base/cards',

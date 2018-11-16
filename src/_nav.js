@@ -105,7 +105,7 @@ export default  {
     },
     {
       name: 'Logs',
-      url: '/dashboard',
+      url: '/logs',
       icon: 'icon-speedometer',
       badge: {
         variant: 'primary',
@@ -113,7 +113,7 @@ export default  {
     },
     {
       name: 'Parameters',
-      url: '/Planning',
+      url: '/Parameters',
       icon: 'icon-calendar',
       badge: {
         variant: 'primary',
