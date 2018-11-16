@@ -8,10 +8,12 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
+import DaySpanVuetify from 'dayspan-vuetify'
 
 // todo
 // cssVars()
 
+Vue.use(DaySpanVuetify)
 Vue.use(BootstrapVue)
 
 /* eslint-disable no-new */

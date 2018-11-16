@@ -64,6 +64,7 @@ const Parameters = () => import('@/views/Parameters/Parameters')
 //custom components
 const LogsDetails = () => import('@/views/base/LogsDetails')
 const ParametersDetails = () => import('@/views/base/ParametersDetails')
+const PlanningDetails = () => import('@/views/base/PlanningDetails')
 
 Vue.use(Router)
 
@@ -141,13 +142,7 @@ const router = new Router({
         children: [
           {
             path: '',
-            component: Planning,
-          },
-          {
-            path: ':id',
-            meta: { label: 'Planning Details'},
-            name: 'Planning',
-            component: Planning,
+            component: PlanningDetails,
           },
         ]
         },
