@@ -34,4 +34,4 @@ GTA application
 - Création des pages et des composants de logs et de paramètres. Affichage statiques de contenu
 - En cours d'implémentation d'un calendrier pour la page planning d'un salarié.
 
-Application disponible sur  https://mathiasloiret.github.io/ (dernière version le 15/11/18 à 13h52)
+Application disponible sur  https://mathiasloiret.github.io/ (dernière version le 16/11/18 à 12h00)
