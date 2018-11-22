@@ -21,6 +21,33 @@ GTA application
 - Avancement de la page User / données personnel de l'utilisateur
 
   Travail effectué :
+- Le menu différentiel a été mis en place
+- la fontion de déconnexion à été ajoutée
+
+### 15-16/11/18 : 
+
+  Prévision :
+- profil DRH : Créer / afficher la page de logs + page paramètre
+- Avancement de la page User / données personnel de l'utilisateur
+
+  Travail effectué :
+- Création des pages et des composants de logs et de paramètres. Affichage statiques de contenu
+- En cours d'implémentation d'un calendrier pour la page planning d'un salarié.
+
+### 22/11/18 : 
+
+  Prévision :
+- Mettre en place une gestion de planning fonctionnelle
+
+  Travail effectué :
 - 
 
-Application disponible sur  https://mathiasloiret.github.io/ (dernière version le 26/10/18 à 11h52)
+
+Application disponible sur  https://mathiasloiret.github.io/ (dernière version le 16/11/18 à 12h00)
+login : 
+- salarié : JohnDoe@gmail.com
+- Manager : SamppaNori@gmail.com
+- DRH : EstavanLykos@gmail.com
+
+mot de passe (le même pour tous) : aze
+

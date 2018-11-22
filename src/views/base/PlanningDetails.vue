@@ -1,5 +1,7 @@
 <template>
+
   <full-calendar :events="events"></full-calendar>
+
 </template>
 
 <script>
@@ -27,5 +29,6 @@ export default {
   },
   methods :{
   }
+
 }
 </script>
