@@ -34,4 +34,20 @@ GTA application
 - Création des pages et des composants de logs et de paramètres. Affichage statiques de contenu
 - En cours d'implémentation d'un calendrier pour la page planning d'un salarié.
 
+### 22/11/18 : 
+
+  Prévision :
+- Mettre en place une gestion de planning fonctionnelle
+
+  Travail effectué :
+- 
+
+
 Application disponible sur  https://mathiasloiret.github.io/ (dernière version le 16/11/18 à 12h00)
+login : 
+- salarié : JohnDoe@gmail.com
+- Manager : SamppaNori@gmail.com
+- DRH : EstavanLykos@gmail.com
+
+mot de passe (le même pour tous) : aze
+
