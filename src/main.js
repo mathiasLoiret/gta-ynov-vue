@@ -9,12 +9,12 @@ import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
 
-// todo
-// cssVars()
+import FullCalendar from 'vue-full-calendar'
+import 'fullcalendar/dist/fullcalendar.css'
+Vue.use(FullCalendar)
 
 Vue.use(BootstrapVue)
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
