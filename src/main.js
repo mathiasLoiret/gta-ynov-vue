@@ -8,14 +8,15 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
-import DaySpanVuetify from 'dayspan-vuetify'
 
 import FullCalendar from 'vue-full-calendar'
 import 'fullcalendar/dist/fullcalendar.css'
-Vue.use(FullCalendar)
 
-Vue.use(DaySpanVuetify)
+Vue.use(FullCalendar)
 Vue.use(BootstrapVue)
+Vue.component('modal', {
+  template: '#modal-template'
+})
 
 new Vue({
   el: '#app',

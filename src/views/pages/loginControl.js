@@ -33,6 +33,23 @@ export default {
                 sessionStorage.setItem("idUser", user.id);
                 sessionStorage.setItem("nameUser", user.name);
                 sessionStorage.setItem("roleUser", user.role);
+                sessionStorage.setItem("eventsCalendar", JSON.stringify([ 
+                    {
+                        title  : 'event1',
+                        start  : '2018-11-23',
+                    },
+                    {
+                        title  : 'event2',
+                        start  : '2018-01-05',
+                        end    : '2018-01-07',
+                    },
+                    {
+                        title  : 'event3',
+                        start  : '2010-01-09T12:30:00',
+                        allDay : false,
+                    },
+                  ]));
+                console.log(sessionStorage.getItem("eventsCalendar"))
                 inUsersData = true;
             }
         })

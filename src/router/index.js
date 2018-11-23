@@ -64,11 +64,8 @@ const Parameters = () => import('@/views/Parameters/Parameters')
 //custom components
 const LogsDetails = () => import('@/views/base/LogsDetails')
 const ParametersDetails = () => import('@/views/base/ParametersDetails')
-<<<<<<< HEAD
 const PlanningDetails = () => import('@/views/base/PlanningDetails') 
-=======
-const PlanningDetails = () => import('@/views/base/PlanningDetails')
->>>>>>> cbacb460de8c0734005c972db6989ea65930eac2
+const UserDetails = () => import('@/views/base/UserDetails') 
 
 Vue.use(Router)
 
@@ -127,13 +124,7 @@ const router = new Router({
           children: [
             {
               path: '',
-              component: Users,
-            },
-            {
-              path: ':id',
-              meta: { label: 'User Details'},
-              name: 'User',
-              component: User,
+              component: UserDetails,
             },
           ]
         },
@@ -147,11 +138,7 @@ const router = new Router({
           {
             path: '',
             component: PlanningDetails,
-<<<<<<< HEAD
           }
-=======
-          },
->>>>>>> cbacb460de8c0734005c972db6989ea65930eac2
         ]
         },
         {
